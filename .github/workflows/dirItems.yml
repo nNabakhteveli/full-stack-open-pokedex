@@ -1,0 +1,14 @@
+name: Directory Items
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  items_job:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Show directory items
+        run: |
+          ls -la

@@ -1,0 +1,14 @@
+name: Current time
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  date_job:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Now it is
+        run: |
+          date
